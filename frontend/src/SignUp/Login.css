@@ -1,0 +1,71 @@
+/* Fondo completo y centrado */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('../fondos/fondohome.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Wrapper que centra el contenido */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja del formulario */
+.login-container {
+  width: 90%;
+  max-width: 420px;
+  padding: 30px 30px;
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #000;
+}
+
+/* Título */
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #000;
+}
+
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.212);
+}
+
+/* Botón */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}

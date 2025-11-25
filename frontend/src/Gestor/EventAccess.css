@@ -1,0 +1,105 @@
+/* Fondo de pantalla */
+.access-container {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('../fondos/fondohome.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 0;
+  }
+  
+  /* Caja translúcida central */
+  .background-overlay {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    max-width: 1000px;
+    width: 95%;
+    overflow-x: auto;
+  }
+  
+  /* Contenido principal */
+  .access-content {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 35px;
+    border-radius: 16px;
+    text-align: center;
+    color: #222;
+    width: 100%;
+  }
+  
+  /* Título */
+  .access-content h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Tabla de eventos */
+  .access-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: white;
+  }
+  
+  .access-table th, .access-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .access-table th {
+    background-color: #f7f7f7;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .access-table tr:hover {
+    background-color: #fff5cc;
+    transition: all 0.3s ease;
+  }
+  
+  /* Botón volver */
+  .back-button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #000;
+  }
+  
+  /* Mensaje de error */
+  .error-message {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .access-table th, .access-table td {
+      padding: 8px;
+      font-size: 13px;
+    }
+  
+    .access-content h2 {
+      font-size: 24px;
+    }
+  }
+  

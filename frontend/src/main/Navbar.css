@@ -1,0 +1,44 @@
+.navbar {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-item {
+    padding-top: 30px;
+    margin: 0 15px;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+  
+  .logout-button {
+    background-color: #555;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
+  /* Inserta una imagen antes de un elemento */
+.navbar-logo {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-image: url('../fondos/logo.png');
+  background-size: contain; 
+  margin-right: 10px;
+}

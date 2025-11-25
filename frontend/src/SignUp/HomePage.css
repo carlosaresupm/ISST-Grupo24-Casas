@@ -1,0 +1,93 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('../fondos/fondohome.jpg') no-repeat center center/cover;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+
+.message-container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 1s ease;
+}
+
+.message-container h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.message-container p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+
+.access-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 25px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(8px);
+  animation: fadeInUp 1s ease;
+}
+
+.access-link, .signup-link {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 15px;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  
+}
+
+.access-link:hover,
+.signup-link:hover {
+  background-color: #ffffff;
+  color: #007bff;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
